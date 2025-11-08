@@ -1,0 +1,19 @@
+[package]
+name = "{{project_name}}"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+uncovr = "0.2.4"
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+chrono = "0.4"
+config = "0.15.18"
+lazy_static = "1.5.0"
+rust-env = "0.1.0"
+dotenvy = "0.15"
+tower-http = {version = "0.6.6", features = ["fs"]}
+tower-livereload = "0.9.6"
+tera = "1.20.1"
+derive-new = "0.7.0"
+tera-hot-reload = "0.2.5"
