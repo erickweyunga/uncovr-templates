@@ -1,10 +1,29 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8" />
-        <title>{% block title %}My Site{% endblock %}</title>
+        <meta charset="UTF-8" />
+        <meta name="author" content="westtle" />
+        <meta name="description" content="Created by Uncovr and Wenzetu" />
+        <meta
+            name="keywords"
+            content="uncovr, wenzetu"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{% block title %} Uncovr + Wenzetu {% endblock %}</title>
+
+        <link rel="icon" type="image/x-icon" href="#" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="/public/styles/style.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="/public/styles/article.css"
+        />
     </head>
     <body>
-        {% block content %}{% endblock %}
+        {% block content %} {% endblock %}
     </body>
 </html>

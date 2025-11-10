@@ -1,7 +1,5 @@
-use tera::Context as TemplateContext;
 use uncovr::{prelude::*, response::Html};
-
-use crate::settings::service::render;
+use wenzetu::{context, render};
 
 #[derive(Clone)]
 pub struct Index;
@@ -18,10 +16,12 @@ impl API for Index {
     type Res = Html<String>;
 
     async fn handler(&self, _ctx: Context<Self::Req>) -> Self::Res {
-        let mut context = TemplateContext::new();
-        context.insert("name", "World");
-
-        let html = render("index.html", &context);
+        let html = render(
+            "index.html",
+            &context! {
+                name: "World",
+            },
+        );
 
         Html(html)
     }
