@@ -5,7 +5,7 @@ edition = "2024"
 
 [dependencies]
 uncovr = "0.2.6"
-wenzetu = "0.0.1"
+wenzetu = "0.1.0"
 tokio = { version = "1", features = ["full"] }
 serde = { version = "1", features = ["derive"] }
 derive-new = "0.7.0"
