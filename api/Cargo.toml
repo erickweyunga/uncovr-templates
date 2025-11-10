@@ -1,0 +1,12 @@
+[package]
+name = "{{project_name}}"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+uncovr = "0.2.6"
+wenzetu = "0.1.0"
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+derive-new = "0.7.0"
+tera = "1.20.1"
